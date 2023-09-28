@@ -1,0 +1,108 @@
+
+.container{
+    width: 100%;
+   min-height:100vh;
+     background-image: url(../imagens/bg-repeat.jpg);
+     background-size: contain;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+.container .descricao{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   
+    max-width: 400px;
+    max-height: 80vh;
+    line-height: 23.44px;
+}
+.container .descricao .informacao{
+    font-size: 2.1rem;
+    font-weight: 900;
+    color: #fff;
+    padding-bottom: 15px;
+    line-height: 23px;
+}
+.container .descricao .texto{
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #fff;
+    line-height: 17.58px;
+}
+.container .container-formulario{
+
+ width: 350px ;
+height: 420px;
+    background-color: #fff;
+    
+}
+.container .container-formulario .formulario{
+    display: flex;
+    flex-direction: column;
+   margin: 20px 9px 0 12px;
+}
+.container .container-formulario .formulario form{
+   margin-bottom:14px;
+}
+
+.container .container-formulario .formulario input{
+width: 320px;
+min-height:35px;
+
+}
+
+.borda-preta{
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.container .container-formulario .formulario textarea{
+    width: 320px;
+    height: 100px;
+
+  
+}
+.container .container-formulario .formulario b{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 17.58px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.container .container-formulario .formulario button{
+    width: 298px;
+    height: 41.13px;
+    background-color: #3ccc87;
+    border: none;
+    border-radius: 5px;
+margin-left: 10px;
+cursor: pointer;
+}
+.container .container-formulario .formulario button p{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 17.58px;
+}
+.campo-invalido{
+    border: 1px solid red ;
+    border-radius: 5px;
+}
+
+.mensagem-erro{
+    color: red;
+    display: none; 
+}
+.campo-valido{
+    border: 1px solid #00c22b;
+    border-radius: 5px;
+}
+
+@media (max-width:790px){
+    
+ .container {
+    display: flex;
+    flex-direction: column;
+ }
+}

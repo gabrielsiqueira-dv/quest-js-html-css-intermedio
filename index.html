@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <title>Quest html-CSS-JS iNTERMEDIO </title>
+
+</head>
+
+<body>
+    <section class="container">
+        <div class="descricao">
+            <h1 class="informacao">FICOU COM DÚVIDA? NOS MANDE UMA MENSAGEM!</h1>
+            <p class="texto">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato
+                em menos de 24h.</p>
+        </div>
+        <div class="container-formulario">
+            <div class="formulario">
+                <form >
+                    <input type="text" name="nome" id="nome" class="borda-preta" placeholder="Nome completo *">
+                    <p class="mensagem-erro" id="nomeErro"> campo obrigatorio</p>
+                </form>
+                <form >
+                    <input type="email" name="email" id="email" class="borda-preta" placeholder="Email *">
+                    <p  class="mensagem-erro" id="emailErro">campo obrigatorio</p>
+                </form>
+                <form >
+                    <input type="number" name="numero" id="numero" class="borda-preta" placeholder="Telefone *">
+                    <p  class="mensagem-erro" id="numeroErro">campo obrigatorio</p>
+                </form>
+                
+                    <textarea id="mensagemInput" class="borda-preta" placeholder="Mensagem *"></textarea>
+                    <p  class="mensagem-erro" id="mensagemErro">campo obrigatorio</p>
+            
+
+                <b class="obrigatorio">* Campos obrigatórios</b>
+                <button onclick="validarCampos()"><p>Enviar</p></button>
+            </div>
+        </div>
+    </section>
+    <script src="./src/js/formulario.js"></script>
+</body>
+
+</html>
